@@ -32,18 +32,25 @@
             this.lblCountry = new System.Windows.Forms.Label();
             this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.Gender = new System.Windows.Forms.GroupBox();
-            this.radioMale = new System.Windows.Forms.RadioButton();
             this.radioFemale = new System.Windows.Forms.RadioButton();
+            this.radioMale = new System.Windows.Forms.RadioButton();
             this.lblHobby = new System.Windows.Forms.Label();
             this.chkReading = new System.Windows.Forms.CheckBox();
             this.chkPainting = new System.Windows.Forms.CheckBox();
             this.Status = new System.Windows.Forms.GroupBox();
-            this.radioMarried = new System.Windows.Forms.RadioButton();
             this.radioUnmarried = new System.Windows.Forms.RadioButton();
+            this.radioMarried = new System.Windows.Forms.RadioButton();
             this.btnPreview = new System.Windows.Forms.Button();
             this.comCountry = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.lblID = new System.Windows.Forms.Label();
+            this.l = new System.Windows.Forms.Label();
+            this.dtgCustomer = new System.Windows.Forms.DataGridView();
             this.Gender.SuspendLayout();
             this.Status.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgCustomer)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCustomerName
@@ -51,7 +58,7 @@
             this.lblCustomerName.AutoSize = true;
             this.lblCustomerName.Location = new System.Drawing.Point(60, 37);
             this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(98, 13);
+            this.lblCustomerName.Size = new System.Drawing.Size(83, 12);
             this.lblCustomerName.TabIndex = 0;
             this.lblCustomerName.Text = "Customer Name";
             // 
@@ -60,7 +67,7 @@
             this.lblCountry.AutoSize = true;
             this.lblCountry.Location = new System.Drawing.Point(60, 85);
             this.lblCountry.Name = "lblCountry";
-            this.lblCountry.Size = new System.Drawing.Size(63, 13);
+            this.lblCountry.Size = new System.Drawing.Size(53, 12);
             this.lblCountry.TabIndex = 1;
             this.lblCountry.Text = "Country ";
             // 
@@ -83,34 +90,34 @@
             this.Gender.TabStop = false;
             this.Gender.Text = "Gender";
             // 
-            // radioMale
-            // 
-            this.radioMale.AutoSize = true;
-            this.radioMale.Location = new System.Drawing.Point(6, 20);
-            this.radioMale.Name = "radioMale";
-            this.radioMale.Size = new System.Drawing.Size(56, 17);
-            this.radioMale.TabIndex = 0;
-            this.radioMale.TabStop = true;
-            this.radioMale.Text = "Male";
-            this.radioMale.UseVisualStyleBackColor = true;
-            // 
             // radioFemale
             // 
             this.radioFemale.AutoSize = true;
             this.radioFemale.Location = new System.Drawing.Point(140, 20);
             this.radioFemale.Name = "radioFemale";
-            this.radioFemale.Size = new System.Drawing.Size(70, 17);
+            this.radioFemale.Size = new System.Drawing.Size(59, 16);
             this.radioFemale.TabIndex = 5;
             this.radioFemale.TabStop = true;
             this.radioFemale.Text = "Female";
             this.radioFemale.UseVisualStyleBackColor = true;
+            // 
+            // radioMale
+            // 
+            this.radioMale.AutoSize = true;
+            this.radioMale.Location = new System.Drawing.Point(6, 20);
+            this.radioMale.Name = "radioMale";
+            this.radioMale.Size = new System.Drawing.Size(47, 16);
+            this.radioMale.TabIndex = 0;
+            this.radioMale.TabStop = true;
+            this.radioMale.Text = "Male";
+            this.radioMale.UseVisualStyleBackColor = true;
             // 
             // lblHobby
             // 
             this.lblHobby.AutoSize = true;
             this.lblHobby.Location = new System.Drawing.Point(63, 186);
             this.lblHobby.Name = "lblHobby";
-            this.lblHobby.Size = new System.Drawing.Size(56, 13);
+            this.lblHobby.Size = new System.Drawing.Size(47, 12);
             this.lblHobby.TabIndex = 5;
             this.lblHobby.Text = "Habbies";
             // 
@@ -119,7 +126,7 @@
             this.chkReading.AutoSize = true;
             this.chkReading.Location = new System.Drawing.Point(118, 185);
             this.chkReading.Name = "chkReading";
-            this.chkReading.Size = new System.Drawing.Size(78, 17);
+            this.chkReading.Size = new System.Drawing.Size(66, 16);
             this.chkReading.TabIndex = 6;
             this.chkReading.Text = "Reading";
             this.chkReading.UseVisualStyleBackColor = true;
@@ -129,7 +136,7 @@
             this.chkPainting.AutoSize = true;
             this.chkPainting.Location = new System.Drawing.Point(216, 186);
             this.chkPainting.Name = "chkPainting";
-            this.chkPainting.Size = new System.Drawing.Size(85, 17);
+            this.chkPainting.Size = new System.Drawing.Size(72, 16);
             this.chkPainting.TabIndex = 7;
             this.chkPainting.Text = "Painting";
             this.chkPainting.UseVisualStyleBackColor = true;
@@ -146,31 +153,31 @@
             this.Status.Text = "Status";
             this.Status.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // radioMarried
-            // 
-            this.radioMarried.AutoSize = true;
-            this.radioMarried.Location = new System.Drawing.Point(0, 36);
-            this.radioMarried.Name = "radioMarried";
-            this.radioMarried.Size = new System.Drawing.Size(77, 17);
-            this.radioMarried.TabIndex = 0;
-            this.radioMarried.TabStop = true;
-            this.radioMarried.Text = "Married";
-            this.radioMarried.UseVisualStyleBackColor = true;
-            // 
             // radioUnmarried
             // 
             this.radioUnmarried.AutoSize = true;
             this.radioUnmarried.Location = new System.Drawing.Point(140, 36);
             this.radioUnmarried.Name = "radioUnmarried";
-            this.radioUnmarried.Size = new System.Drawing.Size(91, 17);
+            this.radioUnmarried.Size = new System.Drawing.Size(77, 16);
             this.radioUnmarried.TabIndex = 1;
             this.radioUnmarried.TabStop = true;
             this.radioUnmarried.Text = "Unmarried";
             this.radioUnmarried.UseVisualStyleBackColor = true;
             // 
+            // radioMarried
+            // 
+            this.radioMarried.AutoSize = true;
+            this.radioMarried.Location = new System.Drawing.Point(0, 36);
+            this.radioMarried.Name = "radioMarried";
+            this.radioMarried.Size = new System.Drawing.Size(65, 16);
+            this.radioMarried.TabIndex = 0;
+            this.radioMarried.TabStop = true;
+            this.radioMarried.Text = "Married";
+            this.radioMarried.UseVisualStyleBackColor = true;
+            // 
             // btnPreview
             // 
-            this.btnPreview.Location = new System.Drawing.Point(135, 340);
+            this.btnPreview.Location = new System.Drawing.Point(66, 340);
             this.btnPreview.Name = "btnPreview";
             this.btnPreview.Size = new System.Drawing.Size(75, 19);
             this.btnPreview.TabIndex = 9;
@@ -192,11 +199,75 @@
             this.comCountry.TabIndex = 10;
             this.comCountry.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(216, 338);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Add";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(65, 387);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Update";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(216, 387);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "Delete";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Location = new System.Drawing.Point(12, 392);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(0, 12);
+            this.lblID.TabIndex = 14;
+            this.lblID.Visible = false;
+            // 
+            // l
+            // 
+            this.l.AutoSize = true;
+            this.l.Location = new System.Drawing.Point(10, 392);
+            this.l.Name = "l";
+            this.l.Size = new System.Drawing.Size(0, 12);
+            this.l.TabIndex = 15;
+            this.l.Visible = false;
+            // 
+            // dtgCustomer
+            // 
+            this.dtgCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgCustomer.Location = new System.Drawing.Point(398, 37);
+            this.dtgCustomer.Name = "dtgCustomer";
+            this.dtgCustomer.RowTemplate.Height = 23;
+            this.dtgCustomer.Size = new System.Drawing.Size(354, 276);
+            this.dtgCustomer.TabIndex = 16;
+            this.dtgCustomer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgCustomer_CellClick);
+            // 
             // frmCustomerDataEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 450);
+            this.ClientSize = new System.Drawing.Size(773, 450);
+            this.Controls.Add(this.dtgCustomer);
+            this.Controls.Add(this.l);
+            this.Controls.Add(this.lblID);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.comCountry);
             this.Controls.Add(this.btnPreview);
             this.Controls.Add(this.Status);
@@ -209,10 +280,12 @@
             this.Controls.Add(this.lblCustomerName);
             this.Name = "frmCustomerDataEntry";
             this.Text = "Customer Data Entry Screen";
+            this.Load += new System.EventHandler(this.frmCustomerDataEntry_Load);
             this.Gender.ResumeLayout(false);
             this.Gender.PerformLayout();
             this.Status.ResumeLayout(false);
             this.Status.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgCustomer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,6 +307,12 @@
         private System.Windows.Forms.RadioButton radioUnmarried;
         private System.Windows.Forms.Button btnPreview;
         private System.Windows.Forms.ComboBox comCountry;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.Label l;
+        private System.Windows.Forms.DataGridView dtgCustomer;
     }
 }
 
